@@ -1,0 +1,15 @@
+dubbo:
+  protocol:
+    name: dubbo
+    port: -1
+  application:
+    name: dubboNacosDemo
+    logger: slf4j
+  provider:
+    timeout: 10000
+    filter: exceptionFilter
+  registry:
+    address: nacos://127.0.0.1:8848
+
+server:
+  port: 8089
