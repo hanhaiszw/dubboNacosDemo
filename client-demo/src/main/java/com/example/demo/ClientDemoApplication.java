@@ -19,16 +19,16 @@ public class ClientDemoApplication{
         SpringApplication.run(ClientDemoApplication.class, args);
     }
 
-    @Reference(check = false,interfaceClass = StudentService.class,version = "1.0")
-    private StudentService studentService;
-
-    @Bean
-    public CommandLineRunner commandLineRunner(){
-        return args -> {
-            Student student = studentService.getStudentById(2L);
-            System.out.println("--------------------szwszwszw--------------------");
-            System.out.println(student);
-            System.out.println("--------------------szwszwszw--------------------");
-        };
-    }
+//    @Reference(check = false,interfaceClass = StudentService.class,version = "1.0")
+//    private StudentService studentService;
+//
+//    @Bean
+//    public CommandLineRunner commandLineRunner(){
+//        return args -> {
+//            Student student = studentService.getStudentById(2L);
+//            System.out.println("--------------------szwszwszw--------------------");
+//            System.out.println(student);
+//            System.out.println("--------------------szwszwszw--------------------");
+//        };
+//    }
 }
